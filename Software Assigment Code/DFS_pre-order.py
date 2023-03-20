@@ -14,6 +14,8 @@
 #New York is connected to Washington DC and Tokyo 
 #Washington DC connects to none 
 #Tokyo connects to none  
+
+# Using a Python dictionary to act as an adjacency list
 graph = {
     "9": ["5","14"],
     "5": ["3", "6"],
@@ -31,8 +33,11 @@ graph = {
 }
 print(graph)
 
+
+# Set to keep track of visited nodes of graph.
 visitednode = set()
 
+#function for dfs
 def dfs(visitednode, graph, rootnode):
     if rootnode not in visitednode:
         print(rootnode)
@@ -41,7 +46,8 @@ def dfs(visitednode, graph, rootnode):
             dfs(visitednode, graph, childnode)
 print("DFS Pre order result is:")
 
-#root = Leeds(9)
+
+# Driver Code
 dfs(visitednode, graph, "9")
 
 
