@@ -13,7 +13,7 @@
 #Berlin connects to none  
 #New York is connected to Washington DC and Tokyo 
 #Washington DC connects to none 
-#Tokyo connects to none 
+#Tokyo connects to none  
 graph = {
     "9": ["5","14"],
     "5": ["3", "6"],
